@@ -56,3 +56,9 @@ h2 {
 p {
   margin: 0;
 }
+
+@layer components {
+  .flexcenter {
+    @apply flex justify-center items-center;
+  }
+}
