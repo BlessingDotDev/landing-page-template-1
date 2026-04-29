@@ -1,5 +1,6 @@
 import Header from '../../components/Header';
 import SearchInput from './SearchInput';
+import Tasks from './Tasks';
 
 function HomePage() {
   return (
@@ -13,6 +14,8 @@ function HomePage() {
           </h1>
 
           <SearchInput />
+          <Tasks />
+          
         </section>
       </main>
     </>

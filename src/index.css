@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --text: #ffffff;
-  --text-h: ;
-  --text-h-s:  #f3f4f6;
+  --text: rgb(212, 212, 212);
+  --text-h: rgb(231, 231, 240);
+  --text-h-s: rgb(192, 192, 192);
   --bg: #000106;
   --border: #2e303a;
   --accent: #c084fc;
@@ -42,6 +42,12 @@ h3 {
   color: var(--text-h);
 }
 
+h4 {
+  font-family: var(--heading);
+  font-weight: 400;
+  font-size: 14px;
+}
+
 h2 {
   font-size: 24px;
   line-height: 118%;
@@ -61,4 +67,17 @@ p {
   .flexcenter {
     @apply flex justify-center items-center;
   }
+
+  .hoverEffect {
+    @apply transition-colors duration-200 ease-in-out;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -sm-overflow-style: none;
+  scrollbar-width: none;
 }
