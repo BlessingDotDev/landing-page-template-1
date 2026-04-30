@@ -7,7 +7,7 @@ function HomePage() {
     <>
       <Header />
 
-      <main className="p-6">
+      <main className="p-8">
         <section>
           <h1 className="text-center text-3xl my-12 tracking-wide">
             Find Help for home tasks

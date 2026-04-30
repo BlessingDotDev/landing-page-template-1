@@ -11,7 +11,8 @@ function SearchInput() {
         border-white/20 focus:outline-none focus:ring-1 
         focus:ring-green-900 transition-all duration-300"
       />
-      <button className="flexcenter cursor-pointer bg-green-900 h-12 w-12 rounded-br-xl rounded-tr-xl ring-green-900 ring-1">
+      <button className="flexcenter cursor-pointer bg-green-900 
+      h-12 w-12 rounded-br-xl rounded-tr-xl ring-green-900 ring-1">
         <MagnifyingGlassIcon className="h-4 w-4" />
       </button>
     </div>
