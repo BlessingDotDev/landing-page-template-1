@@ -12,7 +12,7 @@ function HomePage() {
           <h1 className="text-center text-3xl my-12 tracking-wide">
             Find Help for home tasks
           </h1>
-
+          
           <SearchInput />
           <Tasks />
           

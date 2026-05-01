@@ -9,6 +9,8 @@ import {
   Home,
   Leaf,
 } from 'lucide-react';
+import Task from './Task';
+import TaskSelected from './TaskSelected'
 
 type Category =
   | 'errands'
@@ -238,33 +240,14 @@ function Tasks() {
         snap-x snap-mandatory no-scrollbar">
         {
           taskList.map((task) => (
-            <div
-              key={task.id}
-              onClick={() => setActive(task.id)}
-              className="flexcenter flex-shrink-0 flex-col 
-                group cursor-pointer gap-2"
-            >
-              <task.icon className="w-6 h-6 text-gray-300
-               group-hover:text-green-300 hoverEffect" />
-              <h4 className="group-hover:text-green-300 h-12">
-                {task.name}
-              </h4>
-            </div>
+           <Task id={task.id} name={task.name} setActive={setActive} Icon={task.icon}/>
           ))}
       </div>
 
       {/* Render selected content */}
       <div className="flex flex-col sm:justify-center sm:flex-row gap-4 flex-wrap">
         {active && taskList.find((task) => task.id === active)?.searchWords.map((search) => (
-          <div key={search.name} className=" bg-blue-500/10 p-4 rounded-lg">
-            <div className="flexcenter">
-              <button></button>
-            </div>
-            <h3 className=" text-md sm:text-lg font-semibold">{search.name}</h3>
-            <h4 className="text-gray-500">
-              {search.keywords.join(', ')}
-            </h4>
-          </div>
+         <TaskSelected name={search.name} keywords={search.keywords} />
         ))}
       </div>
     </>
