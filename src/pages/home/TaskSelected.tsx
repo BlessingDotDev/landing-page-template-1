@@ -1,3 +1,5 @@
+import { Link } from 'react-router';
+
 type TaskSelectedProps = {
   name: string;
   keywords: string[];
@@ -5,7 +7,7 @@ type TaskSelectedProps = {
 
 function TaskSelected({ name, keywords}: TaskSelectedProps) {
   return (
-    <div key={name} className=" bg-blue-500/10 p-4 rounded-lg">
+    <Link to={`/services/232`} key={name} className=" bg-blue-500/10 p-4 rounded-lg">
       <div className="flexcenter">
         <button></button>
       </div>
@@ -14,7 +16,7 @@ function TaskSelected({ name, keywords}: TaskSelectedProps) {
       <h4 className="text-gray-500">
         {keywords.join(', ')}
       </h4>
-    </div>
+    </Link>
   )
 }
 
