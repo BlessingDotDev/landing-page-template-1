@@ -8,29 +8,9 @@ import {
   Home,
   Leaf,
 } from 'lucide-react';
-import Service from './Service';
+import type { Task } from '../types/services';
 
-type Category =
-  | 'errands'
-  | 'academic'
-  | 'digital'
-  | 'moving'
-  | 'personal'
-  | 'outdoors'
-  | 'cleaning'
-  | 'repairs';
-
-type Task = {
-  id: Category;
-  name: string;
-  icon: any;
-  searchWords: {
-    name: string;
-    keywords: string[];
-  }[];
-};
-
-const taskList: Task[] = [
+export const services: Task[] = [
   {
     id: 'repairs',
     name: 'Home Repairs',
@@ -228,20 +208,3 @@ const taskList: Task[] = [
     ]
   },
 ];
-
-function Services() {
-
-  return (
-    <>
-      <div className="flexcenter mx-1 gap-8 mt-12 overflow-x-auto 
-        snap-x snap-mandatory no-scrollbar">
-        {
-          taskList.map((task) => (
-           <Service id={task.id} name={task.name} Icon={task.icon}/>
-          ))}
-      </div>
-    </>
-  );
-}
-
-export default Services;

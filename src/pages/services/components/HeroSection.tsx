@@ -2,7 +2,7 @@ import SearchInput from './SearchInput';
 
 function HeroSection() {
   return (
-    <section className=" relative min-h-[30vh] ">
+    <section className=" relative min-h-[50vh] ">
 
       <div className=" absolute inset-0">
         <img
