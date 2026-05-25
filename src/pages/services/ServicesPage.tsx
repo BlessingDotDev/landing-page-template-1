@@ -4,7 +4,7 @@ import Services from './components/Services';
 import HeroSection from './components/HeroSection';
 import Practice from './components/Practice';
 import SideBar from './components/sidebar/SideBar';
-import MainBar from './components/MainBar';
+import MainBar from './components/mainbar/MainBar';
 import RightBar from './components/RightBar';
 
 function ServicesPage() {
@@ -20,7 +20,8 @@ function ServicesPage() {
           <Services />
         </section>
 
-        <section className="p-8 grid grid-cols-1 md:grid-cols-[1fr_1.8fr_1fr] m gap-8">
+        <section className="p-8 grid grid-cols-1 
+          md:grid-cols-[1fr_2fr_1fr] m gap-6">
           <SideBar />
           <MainBar />
           <RightBar />
