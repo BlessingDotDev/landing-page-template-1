@@ -6,7 +6,7 @@ import Footer from '../../components/layout/Footer';
 function HomePage() {
   return (
     <>
-      <title>Vision | Find Your Task</title>
+      <title>Vision Works| Find Your Task</title>
       <Header />
 
       <main className=" min-h-screen p-8">
