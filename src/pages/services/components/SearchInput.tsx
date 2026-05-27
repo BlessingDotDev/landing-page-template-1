@@ -1,5 +1,6 @@
 import { Search } from 'lucide-react';
 import { MapPinIcon } from 'lucide-react';
+import Button from '../../../components/ui/Button';
 
 function SearchInput() {
   return (
@@ -26,11 +27,9 @@ function SearchInput() {
       </div>
 
       <div>
-        <button title="Search servce provider"
-          className=" w-full text-sm text-white leading-normal bg-green-600
-           px-8 py-2 rounded-lg cursor-pointer">
+        <Button className="w-full" variant="primary" >
           Search
-        </button>
+        </Button>
       </div>
     </div>
   );

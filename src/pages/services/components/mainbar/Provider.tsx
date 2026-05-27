@@ -1,4 +1,5 @@
 import { Star, MapPinIcon, Heart } from "lucide-react";
+import Button from "../../../../components/ui/Button";
 
 function Provider() {
   return (
@@ -16,13 +17,13 @@ function Provider() {
 
         <div className="flex flex-col md:flex-row md:items-center md:gap-8">
           <div className="flex items-center gap-2">
-            <Star className="text-amber-300 h-4 w-4" />
+            <Star className="text-amber-300 h-3 w-3" />
             <p className="font-semibold text-[12px]">4.5</p>
             <p className="text-[12px]">(124 reviews)</p>
           </div>
 
           <div className="flex items-center gap-2">
-            <MapPinIcon className="text-gray-400 h-4 w-4" />
+            <MapPinIcon className="text-gray-400 h-3 w-3" />
             <p className="text-gray-400 text-[12px]">Acarde Pretoria</p>
           </div>
         </div>
@@ -36,11 +37,10 @@ function Provider() {
         <Heart className="h-4 w-4" />
         <p>R350/hr</p>
         <p className="text-[12px] text-gray-400">Starting from</p>
-        <button className="text-[12px] text-white
-           bg-green-600 rounded-md px-2 py-1 cursor-pointer"
-          >
+        
+        <Button size="xs" className="text-white">
           View Profile
-        </button>
+        </Button>
       </div>
     </div>
   )

@@ -4,7 +4,9 @@ import CheckboxItem from "../../../../components/ui/CheckboxItem";
 
 function SideBar() {
   return (
-    <div className="order-3 md:order-1 flex flex-col gap-6 ring-1 ring-gray-800 rounded-2xl p-4">
+    <div className="hidden lg:flex order-3 md:order-1 
+      flex-col gap-6 ring-1 ring-gray-800 rounded-2xl p-4"
+    >
       <div className="flex justify-between items-center">
         <h3>Filter</h3>
         <h4>Reset</h4>
