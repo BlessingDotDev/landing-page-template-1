@@ -8,7 +8,7 @@ function Provider() {
       <img
         src="/src/assets/hero.png"
         alt="profile picture"
-        className="w-16 h-16 rounded-full"
+        className="w-18 h-18 rounded-full"
       />
 
       <div className="flex-1 ">

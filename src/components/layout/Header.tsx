@@ -16,7 +16,7 @@ function Header() {
         </p>
       </Link>
 
-      <Button variant="primaryHeader" className=" md:px-8 ">
+      <Button variant="primaryHeader" size="sm">
         <Bars3Icon className="text-white w-6 h-6 md:hidden" />
         <p className="hidden md:block font-semibold">
           Menu
