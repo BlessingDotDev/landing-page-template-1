@@ -70,6 +70,10 @@ h2 {
   }
 }
 
+@theme {
+  --color-brand-green: #123329;
+}
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }

@@ -21,14 +21,18 @@ function ServicesPage() {
         </section>
 
         <section className="p-8 grid grid-cols-1 
-          lg:grid-cols-[1fr_2fr_1fr] md:grid-cols-[2fr_1fr] gap-6">
+          lg:grid-cols-[1fr_2fr_1fr] md:grid-cols-[2fr_1fr] gap-24 md:gap-6">
           <SideBar />
           <MainBar />
           <RightBar />
         </section>
       </main>
 
-      <Practice />
+      {
+        /*
+        <Practice />
+        */
+      }
 
       <Footer />
     </>

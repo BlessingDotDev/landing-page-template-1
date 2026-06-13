@@ -1,5 +1,5 @@
-import { Search } from 'lucide-react';
-import { MapPinIcon } from 'lucide-react';
+import { Search,MapPinIcon  } from 'lucide-react';
+import { Link } from 'react-router';
 import Button from '../../../components/ui/Button';
 
 function SearchInput() {
@@ -27,9 +27,14 @@ function SearchInput() {
       </div>
 
       <div>
-        <Button className="w-full" variant="primary" >
-          Search
-        </Button>
+        <Link to="/profile">
+          <Button 
+            variant="primary"
+            className="w-full"  
+          >
+            Search
+          </Button>
+        </Link>
       </div>
     </div>
   );

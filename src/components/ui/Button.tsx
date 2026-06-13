@@ -7,8 +7,9 @@ type ButtonVariant =
   | 'secondary'
   | 'tertiary'
   | 'outline'
+  | 'rounded'
 
-type ButtonSize = 'xs' | 'sm' | 'md' | 'lg';
+type ButtonSize = 'xs' | 'sm' | 'md' | 'lg' | 'round';
 
 interface ButtonProps 
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -22,13 +23,15 @@ const variantStyles: Record<ButtonVariant, string> = {
   secondary: "bg-gray-200 text-gray-900 hover:bg-gray-300",
   tertiary: "text-gray-900 hover:bg-gray-800 text-white",
   outline: "leading-normal hover:bg-green-600 ring-1 bg-black ring-green-600",
+  rounded: "bg-gray-200 text-gray-900 hover:bg-gray-300"
 }
 
 const sizeStyles: Record<ButtonSize, string> = {
   xs: "text-[12px] px-2 py-1 rounded-md",
   sm: "text-sm py-2 px-4 rounded-lg",
   md: "text-sm py-2 px-8 rounded-lg ",
-  lg: "text-base"
+  lg: "text-base text-sm py-4 px-8 rounded-lg",
+  round: "text-sm py-2 px-2 rounded-full"
 }
 
 function Button({
