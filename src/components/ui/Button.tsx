@@ -19,7 +19,7 @@ interface ButtonProps
 
 const variantStyles: Record<ButtonVariant, string> = {
   primaryHeader: "bg-white/15 rounded-xl hover:bg-white/20",
-  primary: "text-white leading-normal bg-green-600  hover:ring-1 hover:bg-black ring-green-600",
+  primary: "text-white leading-normal bg-green-800  hover:ring-1 hover:bg-black ring-green-600",
   secondary: "bg-gray-200 text-gray-900 hover:bg-gray-300",
   tertiary: "text-gray-900 hover:bg-gray-800 text-white",
   outline: "leading-normal hover:bg-green-600 ring-1 bg-black ring-green-600",
