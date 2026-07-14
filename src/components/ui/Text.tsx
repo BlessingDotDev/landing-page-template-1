@@ -13,7 +13,7 @@ interface TextProps
 }
 
 const variantStyles: Record<TextVariant, string> = {
-  title: "text-3xl font-bold",
+  title: "text-3xl font-bold ",
   subtitle: "font-semibold text-sm tracking-wide leading-relaxed",
   body: "text-sm tracking-normal leading-relaxed text-gray-400 ",
   small: "text-sm text-gray-400",

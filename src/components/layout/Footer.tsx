@@ -1,18 +1,27 @@
 import {/* Facebook, Twitter, Instagram */} from "lucide-react";
+import Text from "../ui/Text"
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 mt-12">
+    <footer className="bg-green-900/15 text-gray-300 mt-12">
       <div className="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-4 gap-8">
 
         {/* Brand */}
-        <div>
-          <h2 className="text-white text-lg font-bold mb-2">
-            ServiceHub
-          </h2>
-          <p className="text-sm">
+        <div >
+          <div className="flex items-center gap-2">
+            <img 
+              alt="logo image"
+              src="/src/assets/vision-logo.png"
+              className="w-10"
+            />
+            <h2 className="text-white text-lg font-bold mb-2">
+              Vision<sup>(Works)</sup>
+            </h2>
+          </div>
+
+          <h4 className="text-gray-400 tracking-wide">
             Connecting you with trusted local service providers across South Africa.
-          </p>
+          </h4>
         </div>
 
         {/* Links */}

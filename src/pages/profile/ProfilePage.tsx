@@ -4,7 +4,6 @@ import Footer from "../../components/layout/Footer"
 import {
   ChevronLeft, Star, MapPinIcon,
   Heart, Share, Phone, CheckIcon,
-  StarOff
 } from "lucide-react";
 
 import Button from "../../components/ui/Button"
@@ -30,10 +29,12 @@ function ProfilePage() {
               <img
                 alt="profile image"
                 src="/src/assets/hero.png"
-                className="h-32 w-32 ring-2 ring-gray-300 rounded-full object-cover"
+              
+                className="h-24 md:h-32 w-24 md:w-32 ring-2 
+                ring-gray-300 rounded-full object-cover"
               />
 
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-0 md:gap-2">
                 <div className="flex justify-between">
                   <h2 >Dave the Plumber</h2>
                   <Button
@@ -49,7 +50,7 @@ function ProfilePage() {
 
                 <div className="flex gap-4 md:items-center md:gap-8">
                   <div className="flex items-center gap-2">
-                    <Star className="text-amber-300 h-3 w-3" />
+                    <Star className="text-yellow-500 h-3 w-3" fill="currentColor" />
                     <p className="font-semibold text-[12px]">4.5</p>
                     <p className="text-[12px]">(124 reviews)</p>
                   </div>
@@ -102,7 +103,7 @@ function ProfilePage() {
             {profileNav.map((link) => (
               <li
                 key={link.id}
-                className="p-4 border-b-2 border-green-500"
+                className="text-sm p-4 border-b-2 border-green-500"
               >
                 {link.name}
               </li>
@@ -215,7 +216,7 @@ function ProfilePage() {
 
                       <p className="text-gray-500">98</p>
                     </div>
-                    
+
                     <div className="flex items-center gap-2">
                       <p>1</p>
                       <Star className="h-4 text-yellow-500" fill="currentColor" />
@@ -235,7 +236,50 @@ function ProfilePage() {
                 </div>
               </div>
             </div>
-            <div>
+
+            <div className="flex flex-col gap-8">
+              <div className="container">
+                <h2>Location</h2>
+
+                <div className="flex items-center gap-2 ">
+                  <MapPinIcon className="h-4" />
+                  <h3>Sunnyside Pretoria</h3>
+                </div>
+
+                <Text className="text-green-500 ml-7">Open in Maps</Text>
+
+                <img
+                  alt="map of the location"
+                  src="/src/assets/map.jpg"
+                  className="w-full h-34 object-cover rounded-xl"
+                />
+              </div>
+
+              <div className="container">
+                <h2>Availability</h2>
+
+                {[1, 2, 3].map((value) => (
+                  <div key={value} className="flex justify-between items-center">
+                    <Text>Mon - Fri</Text>
+                    <Text>07:00 - 18:00</Text>
+                  </div>
+                ))}
+              </div>
+
+              <div className="container">
+                <h2>Business info</h2>
+
+                {[1, 2, 3].map(value => (
+                  <div key={value} className="flex justify-between items-center">
+                    <Text>Trading name</Text>
+                    <Text>John the plumber</Text>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="col-span-2 container">
+
             </div>
           </div>
         </section>
